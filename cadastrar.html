@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="atomic.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Cozinha Saudavel - cadastrar alimentos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="atomic.png" alt="Bootstrap" width="40" height="30">
+            </a>
+            <a class="navbar-brand" href="index.html">Cozinha Saudavel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item alimentos-link">
+                    <a class="nav-link active " aria-current="page" href="alimentos.html">Alimentos disponiveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cadastro-link" href="cadastrar.html">Cadastrar Alimentos</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="form" class="formulario-cadastro">
+        <div class="form-group">
+            <label for="doador">Doador</label>
+            <input type="text" class="form-control" id="doador" name="doador">
+        </div>
+        <div class="form-group">
+            <label for="doador">Endereço</label>
+            <input type="text" class="form-control" id="endereco" name="endereco">
+        </div>
+        <div class="form-group">
+            <label for="tipoAlimentos">Tipo Alimento</label>
+            <select class="form-control" id="tipoAlimentos" name="tipo">
+            <option>Fruta</option>
+            <option>Não perecivel</option>
+            <option>Massas</option>
+            <option>Agua</option>
+            <option>Carnes</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="validadeAlimentos">Data de validade</label>
+            <input type="date" class="form-control" id="validadeAlimentos" name="data">
+        </div>
+        <div class="form-group">
+            <label for="descAlimentos">Descrição sobre o alimento</label>
+            <input type="text" class="form-control" id="descAlimentos" name="desc">
+        </div>
+        <button onclick="pegarValor()" id="teste">Obter Valor</button>
+    </form>
+
+
+
+    <footer class="footer-site">
+        <img class="logo-escola" src="https://colegios.cnec.br/assets/img/logo/gensa_branca.png" alt="Logo Escola">
+        <span id="desenvolvido"><b>Desenvolvido por Lorenzo gregis pedroso | Ana Laura souto laureano | Theo soares da Silva</b></span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

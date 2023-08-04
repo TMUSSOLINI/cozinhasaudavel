@@ -1,0 +1,91 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    align-items: center;
+    text-align: center;
+}
+
+.container-descricao{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.image-desper{
+    height: 600px;
+}
+
+
+.texto-descricao{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dicas-desc{
+    margin: 1em 0 1em 0;
+}
+
+.list-evite{
+    margin-top: 1.7em;
+    list-style: none;
+}
+
+.list-item{
+    margin-bottom: 2em;
+}
+
+.link-doar{
+    font-size: larger;
+}
+
+.footer-site{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.logo-escola{
+    margin-left: 4em;
+}
+
+#desenvolvido{
+    margin-right: 4em;
+    color: aliceblue;
+}
+
+.formulario-cadastro{
+    width: 60%;
+    height: 752px;
+    align-items: center;
+    text-align: center;
+}
+
+.botao{
+    margin-top: 2em;
+}
+
+.container-alimentos{
+    display: flex;
+    justify-content: space-between;
+    word-break: break-word;
+    height: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
