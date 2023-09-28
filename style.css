@@ -89,3 +89,7 @@ time, mark, audio, video {
     width: 100%;
     margin: 0 auto;
 }
+
+.receita{
+    border-radius: 100px;
+}
