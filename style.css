@@ -88,8 +88,9 @@ time, mark, audio, video {
     height: 750px;
     width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.receita{
-    border-radius: 100px;
+.texto{
+    margin-top: 4em;
 }
