@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item alimentos-link">
-                    <a class="nav-link active " aria-current="page" href="alimentos.html">Alimentos disponiveis</a>
+                    <a class="nav-link active " aria-current="page" href="alimentos.html">Alimentos Disponíveis</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cadastro-link" href="cadastrar.html">Cadastrar Alimentos</a>
@@ -44,11 +44,12 @@
         <div class="form-group">
             <label for="tipoAlimentos">Tipo Alimento</label>
             <select class="form-control" id="tipoAlimentos" name="tipo">
+            <option>Água</option>
             <option>Fruta</option>
-            <option>Não perecivel</option>
-            <option>Massas</option>
-            <option>Agua</option>
             <option>Carnes</option>
+            <option>Massas</option>
+            <option>Não perecivel</option>
+            <option>Outros</option>
             </select>
         </div>
         <div class="form-group">
@@ -56,17 +57,21 @@
             <input type="date" class="form-control" id="validadeAlimentos" name="data">
         </div>
         <div class="form-group">
+            <label for="quantidadeAlimentos">Quantidade</label>
+            <input type="number" class="form-control" id="quantidadeAlimentos" name="quantidade">
+        </div>
+        <div class="form-group">
             <label for="descAlimentos">Descrição sobre o alimento</label>
             <input type="text" class="form-control" id="descAlimentos" name="desc">
         </div>
-        <button onclick="pegarValor()" id="teste">Obter Valor</button>
+        <button onclick="pegarValor()" id="teste">Valor de Venda</button>
     </form>
 
 
 
     <footer class="footer-site">
         <img class="logo-escola" src="https://colegios.cnec.br/assets/img/logo/gensa_branca.png" alt="Logo Escola">
-        <span id="desenvolvido"><b>Desenvolvido por Lorenzo gregis pedroso | Ana Laura souto laureano | Theo soares da Silva</b></span>
+        <span id="desenvolvido"><b>Desenvolvido por Lorenzo Gregis Pedroso | Ana Laura Souto Laureano | Theo Soares da Silva</b></span>
     </footer>
     <script src="index.js"></script>
 </body>

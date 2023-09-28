@@ -9,12 +9,14 @@ function pegarValor() {
   let validadeAlimentos = document.getElementById("validadeAlimentos");
   let descAlimentos = document.getElementById("descAlimentos");
   let endereco = document.getElementById("endereco");
+  let quantidade = document.getElementById("quantidadeAlimentos");
 
   let valorDoador = doador.value;
   let valortipoAlimentos = tipoAlimentos.value;
   let valorDevalidadeAlimentos = validadeAlimentos.value;
   let valordescAlimentos = descAlimentos.value;
   let valorEndereco = endereco.value;
+  let valorquantidade = quantidade.value;
 
   let alimento = {
     doador: valorDoador,
@@ -22,6 +24,7 @@ function pegarValor() {
     validadeAlimentos: valorDevalidadeAlimentos,
     descAlimentos: valordescAlimentos,
     endereco: valorEndereco,
+    quantidade: valorquantidade,
   };
 
   alimentos.push(alimento);
@@ -49,6 +52,7 @@ function criaProduto() {
           <h5 class="card-title">Empresa: ${alimentos.doador}</h5>
           <p class="card-text">Endereço: ${alimentos.endereco}</p>
           <p class="card-text">Tipo: ${alimentos.tipoAlimentos}</p>
+          <p class="card-text">Quantidade: ${alimentos.quantidade}</p>
           <p class="card-text">Validade: ${alimentos.validadeAlimentos}</p>
           <p class="card-text">Desc: ${alimentos.descAlimentos}</p>
           <button class="btn btn-primary" onclick="reservaProduto(${index})">Reservar</button>
